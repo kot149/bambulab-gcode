@@ -221,15 +221,17 @@ M106 P2 S100 ; turn on big fan ,to cool down toolhead
 M104 S{nozzle_temperature_initial_layer[initial_extruder]} ; set extrude temp earlier, to reduce wait time
 
 ;===== mech mode fast check============================
-G1 X128 Y128 Z10 F20000
-M400 P200j
-M970.3 Q1 A7 B30 C80  H15 K0
-M974 Q1 S2 P0
+; *********** 振動テスト無効化 ***********
+;G1 X128 Y128 Z10 F20000
+;M400 P200j
+;M970.3 Q1 A7 B30 C80  H15 K0
+;M974 Q1 S2 P0
 
-G1 X128 Y128 Z10 F20000
-M400 P200
-M970.3 Q0 A7 B30 C90 Q0 H15 K0
-M974 Q0 S2 P0
+;G1 X128 Y128 Z10 F20000
+;M400 P200
+;M970.3 Q0 A7 B30 C90 Q0 H15 K0
+;M974 Q0 S2 P0
+; *********** 振動テスト無効化 ***********
 
 M975 S1
 G1 F30000
