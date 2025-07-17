@@ -54,5 +54,5 @@ M1002 set_gcode_claim_speed_level : 0
 M17 X0.8 Y0.8 Z0.5 ; lower motor current to 45% power
 
 ; *********** ライト消す ***********
-M960 S5 P1 ; turn on logo lamp
+M960 S5 P0 ; turn off logo lamp
 ; *********** ライト消す ***********
